@@ -1,7 +1,8 @@
-<form action="">
+<form action="/bitcoins">
   <label for="">How many bitcoin do you have?</label>
-  <input type="text" id="amount" name="amount">
+  <input type="text" id="amount" name="amount" value="<%= @bitcoin %>">
   <button>Submit</button>
+  <a href="/bitcoins">Cancel</a>
 </form>
 
 <p>You have <%= @bitcoin %> Bitcoin.</p>
